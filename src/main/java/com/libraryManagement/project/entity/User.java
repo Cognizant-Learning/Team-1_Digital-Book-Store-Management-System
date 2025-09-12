@@ -1,41 +1,32 @@
 package com.libraryManagement.project.entity;
+
+import com.libraryManagement.project.enums.Role;
 import jakarta.persistence.*;
 import java.util.List;
+
 @Entity
 @Table(name = "users")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
-    @Column(nullable = false, unique = true, length = 255)
+
+    @Column(nullable = false, unique = true)
     private String email;
-    @Column(nullable = false, length = 255)
+
+    @Column(nullable = false)
     private String fullName;
-    @Column(length = 255)
-    private String newPassword;
-    @Column(length = 255)
-    private String oldPassword;
-    @Column(length = 255)
+
+    @Column(nullable = false)
     private String password;
+
     @Enumerated(EnumType.STRING)
-    @Column(length = 50)
-    //Todo map to Role
-    private String role;
-    // Relationships
+    @Column(nullable = false)
+    private Role role;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ShippingAddress> shippingAddresses;
-    // Getters and Setters
-
-    public User(Long userId, String email, String fullName, String newPassword, String oldPassword, String password, String role, List<ShippingAddress> shippingAddresses) {
-        this.userId = userId;
-        this.email = email;
-        this.fullName = fullName;
-        this.newPassword = newPassword;
-        this.oldPassword = oldPassword;
-        this.password = password;
-        this.role = role;
-        this.shippingAddresses = shippingAddresses;
-    }
 
     public Long getUserId() {
         return userId;
@@ -61,22 +52,6 @@ public class User {
         this.fullName = fullName;
     }
 
-    public String getNewPassword() {
-        return newPassword;
-    }
-
-    public void setNewPassword(String newPassword) {
-        this.newPassword = newPassword;
-    }
-
-    public String getOldPassword() {
-        return oldPassword;
-    }
-
-    public void setOldPassword(String oldPassword) {
-        this.oldPassword = oldPassword;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -85,11 +60,11 @@ public class User {
         this.password = password;
     }
 
-    public String getRole() {
+    public Role getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(Role role) {
         this.role = role;
     }
 
