@@ -14,17 +14,19 @@ public class BookResponseDTO {
     private String title;
     private String authorName;
     private String categoryName;
+    private String description;
     private Double price;
     private int stockQuantity;
     private String imageUrl;
 
     public BookResponseDTO(Long bookId, @NotBlank String title, @NotNull String authorName,
-                           @NotNull String categoryName, @NotNull @Positive Double price,
+                           @NotNull String categoryName,String description, @NotNull @Positive Double price,
                            int stockQuantity, String imageUrl) {
         this.bookId = bookId;
         this.title = title;
         this.authorName = authorName;
         this.categoryName = categoryName;
+        this.description = description;
         this.price = price;
         this.stockQuantity = stockQuantity;
         this.imageUrl = imageUrl;
