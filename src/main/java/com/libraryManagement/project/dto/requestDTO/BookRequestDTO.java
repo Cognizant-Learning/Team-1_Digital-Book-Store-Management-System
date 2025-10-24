@@ -19,6 +19,8 @@ public class BookRequestDTO {
     @NotNull(message = "Category Name cannot be null")
     private String categoryName;
 
+    private String description;
+
     @NotNull(message = "Price cannot be null")
     @Positive(message = "Price must be positive")
     private Double price;
@@ -26,9 +28,10 @@ public class BookRequestDTO {
     private int stockQuantity;
     private String imageUrl;
 
-    public BookRequestDTO(String title, String author, String category) {
+    public BookRequestDTO(String title, String author, String category, String description) {
         this.title = title;
         this.authorName = author;
         this.categoryName = category;
+        this.description = description;
     }
 }

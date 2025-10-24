@@ -42,7 +42,7 @@ public interface BookService {
     BookResponseDTO updateBookWithImage(Long bookId,BookRequestDTO bookDTO, MultipartFile imageFile);
 
     default BookResponseDTO convertToResponseDTO(Book book) {
-        return new BookResponseDTO(book.getBookId(), book.getTitle(), book.getAuthor().getName(), book.getCategory().getName(), book.getPrice(), book.getStockQuantity(),book.getImageUrl());
+        return new BookResponseDTO(book.getBookId(), book.getTitle(), book.getAuthor().getName(), book.getCategory().getName(),book.getDescription(), book.getPrice(), book.getStockQuantity(),book.getImageUrl());
     }
 }
 

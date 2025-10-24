@@ -73,31 +73,36 @@ INSERT INTO shipping_address (shipping_id, address_line1, address_line2, city, c
 
 -- 📚 BOOKS (depends on authors, categories)
 -- (Added missing books 1-4)
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (1, 'Spring Boot in Action', 1, 1, 499.99, 20, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8lPFDdSU9Y7HmNIqHuu0vUg2glpfet86tyQ&s');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (2, 'Effective Java', 2, 1, 599.00, 15, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThbrlF5tjpjpYQRBunAMlUu7QEWZkL2MsBsw&s');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (3, 'Clean Code', 3, 1, 450.50, 10, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05_YKBy7T8v3xe1WyrVnm929_No0wDzhXDQ&s');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (4, 'Design Patterns', 3, 2, 399.99, 25, TRUE, 'https://miro.medium.com/1*gp0jKkOUow6G91RQkC90tg.jpeg');
--- (Original books 5-24, which now have valid author/category IDs)
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (5, 'Refactoring: Improving the Design of Existing Code', 5, 2, 650.00, 18, TRUE, 'https://www.informit.com/ShowCover.aspx?isbn=0201485672');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (6, 'The Pragmatic Programmer', 15, 10, 550.75, 30, TRUE, 'https://m.media-amazon.com/images/I/51A8l+FxFNL._SL500_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (7, 'Introduction to Algorithms', 8, 4, 899.00, 12, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-yC0aowclqEQRmTCAXw1J6WD6n9fo_NQR1g&s');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (8, 'Code Complete', 14, 10, 720.50, 22, TRUE, 'https://m.media-amazon.com/images/I/61MYY5PRibL._UF1000,1000_QL80_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (9, 'The Art of Computer Programming', 7, 4, 1250.00, 8, TRUE, 'https://m.media-amazon.com/images/I/81Adpoh9IqL._UF1000,1000_QL80_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (10, 'Domain-Driven Design', 12, 8, 680.00, 14, TRUE, 'https://m.media-amazon.com/images/I/818NkFvZy4L._SY522_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (11, 'Building Microservices', 13, 9, 599.99, 25, TRUE, 'https://m.media-amazon.com/images/I/914sPgoyb6L._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (12, 'You Don''t Know JS: Scope & Closures', 11, 7, 350.00, 40, TRUE, 'https://m.media-amazon.com/images/I/71mKvSKoG9L._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (13, 'JavaScript: The Good Parts', 16, 7, 425.00, 35, TRUE, 'https://m.media-amazon.com/images/I/911-3fCci-L._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (14, 'The C++ Programming Language', 10, 6, 850.00, 15, TRUE, 'https://m.media-amazon.com/images/I/61pW2Gbb1DL._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (15, 'Head First Design Patterns', 17, 2, 530.00, 28, TRUE, 'https://m.media-amazon.com/images/I/61bDa6hYd-L._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (16, 'Cracking the Coding Interview', 18, 4, 750.00, 50, TRUE, 'https://m.media-amazon.com/images/I/619M-4oN5FL._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (17, 'Modern Operating Systems', 9, 5, 950.50, 11, TRUE, 'https://m.media-amazon.com/images/I/81h22026IqL._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (18, 'Extreme Programming Explained', 6, 3, 480.00, 17, TRUE, 'https://m.media-amazon.com/images/I/71O15-no1GL._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (19, 'Grokking Algorithms', 19, 4, 499.00, 33, TRUE, 'https://m.media-amazon.com/images/I/61uOAw4DJGL._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (20, 'Java Concurrency in Practice', 20, 1, 620.00, 19, TRUE, 'https://m.media-amazon.com/images/I/61o2a3aT4XL._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (21, 'Clean Architecture', 3, 2, 475.00, 24, TRUE, 'https://m.media-amazon.com/images/I/71s-A1g+JHL._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (22, 'Learning Python', 21, 11, 799.00, 20, TRUE, 'https://m.media-amazon.com/images/I/91B5Tln+04L._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (23, 'Eloquent JavaScript', 22, 7, 450.00, 30, TRUE, 'https://m.media-amazon.com/images/I/81-222zC0zL._SY466_.jpg');
-INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url) VALUES (24, 'Designing Data-Intensive Applications', 23, 9, 880.00, 16, TRUE, 'https://m.media-amazon.com/images/I/91rkMMsmkAL._SY466_.jpg');
+-- (Added missing books 1-4)
+INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url, description) VALUES
+(1, 'Spring Boot in Action', 1, 1, 499.99, 20, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8lPFDdSU9Y7HmNIqHuu0vUg2glpfet86tyQ&s', 'Comprehensive guide to building Java applications using Spring Boot.'),
+(2, 'Effective Java', 2, 1, 599.00, 15, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThbrlF5tjpjpYQRBunAMlUu7QEWZkL2MsBsw&s', 'Best practices and design patterns for writing robust Java code.'),
+(3, 'Clean Code', 3, 1, 450.50, 10, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05_YKBy7T8v3xe1WyrVnm929_No0wDzhXDQ&s', 'Principles and techniques for writing clean, maintainable code.'),
+(4, 'Design Patterns', 3, 2, 399.99, 25, TRUE, 'https://miro.medium.com/1*gp0jKkOUow6G91RQkC90tg.jpeg', 'Classic catalog of object-oriented design patterns for software development.');
+
+-- (Original books 5-24)
+INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity, active, image_url, description) VALUES
+(5, 'Refactoring: Improving the Design of Existing Code', 5, 2, 650.00, 18, TRUE, 'https://www.informit.com/ShowCover.aspx?isbn=0201485672', 'Techniques for restructuring existing code to improve its design.'),
+(6, 'The Pragmatic Programmer', 15, 10, 550.75, 30, TRUE, 'https://m.media-amazon.com/images/I/51A8l+FxFNL._SL500_.jpg', 'Practical advice and tips for becoming a better software developer.'),
+(7, 'Introduction to Algorithms', 8, 4, 899.00, 12, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-yC0aowclqEQRmTCAXw1J6WD6n9fo_NQR1g&s', 'Comprehensive textbook on algorithms and data structures.'),
+(8, 'Code Complete', 14, 10, 720.50, 22, TRUE, 'https://m.media-amazon.com/images/I/61MYY5PRibL._UF1000,1000_QL80_.jpg', 'Software construction techniques for writing high-quality code.'),
+(9, 'The Art of Computer Programming', 7, 4, 1250.00, 8, TRUE, 'https://m.media-amazon.com/images/I/81Adpoh9IqL._UF1000,1000_QL80_.jpg', 'Foundational work on algorithms and mathematical techniques in programming.'),
+(10, 'Domain-Driven Design', 12, 8, 680.00, 14, TRUE, 'https://m.media-amazon.com/images/I/818NkFvZy4L._SY522_.jpg', 'Strategic approach to software design based on domain modeling.'),
+(11, 'Building Microservices', 13, 9, 599.99, 25, TRUE, 'https://m.media-amazon.com/images/I/914sPgoyb6L._SY466_.jpg', 'Guide to designing and deploying microservices architectures.'),
+(12, 'You Don''t Know JS: Scope & Closures', 11, 7, 350.00, 40, TRUE, 'https://m.media-amazon.com/images/I/71mKvSKoG9L._SY466_.jpg', 'Deep dive into JavaScript scope and closure mechanisms.'),
+(13, 'JavaScript: The Good Parts', 16, 7, 425.00, 35, TRUE, 'https://m.media-amazon.com/images/I/911-3fCci-L._SY466_.jpg', 'Highlights the elegant and effective features of JavaScript.'),
+(14, 'The C++ Programming Language', 10, 6, 850.00, 15, TRUE, 'https://m.media-amazon.com/images/I/61pW2Gbb1DL._SY466_.jpg', 'Authoritative reference on C++ language features and usage.'),
+(15, 'Head First Design Patterns', 17, 2, 530.00, 28, TRUE, 'https://m.media-amazon.com/images/I/61bDa6hYd-L._SY466_.jpg', 'Visual and engaging introduction to software design patterns.'),
+(16, 'Cracking the Coding Interview', 18, 4, 750.00, 50, TRUE, 'https://m.media-amazon.com/images/I/619M-4oN5FL._SY466_.jpg', 'Interview preparation book with coding problems and solutions.'),
+(17, 'Modern Operating Systems', 9, 5, 950.50, 11, TRUE, 'https://m.media-amazon.com/images/I/81h22026IqL._SY466_.jpg', 'Comprehensive overview of operating system concepts and design.'),
+(18, 'Extreme Programming Explained', 6, 3, 480.00, 17, TRUE, 'https://m.media-amazon.com/images/I/71O15-no1GL._SY466_.jpg', 'Agile software development methodology focused on simplicity and feedback.'),
+(19, 'Grokking Algorithms', 19, 4, 499.00, 33, TRUE, 'https://m.media-amazon.com/images/I/61uOAw4DJGL._SY466_.jpg', 'Illustrated guide to understanding algorithms through real-world examples.'),
+(20, 'Java Concurrency in Practice', 20, 1, 620.00, 19, TRUE, 'https://m.media-amazon.com/images/I/61o2a3aT4XL._SY466_.jpg', 'Techniques for writing thread-safe Java applications.'),
+(21, 'Clean Architecture', 3, 2, 475.00, 24, TRUE, 'https://m.media-amazon.com/images/I/71s-A1g+JHL._SY466_.jpg', 'Principles for designing scalable and maintainable software architectures.'),
+(22, 'Learning Python', 21, 11, 799.00, 20, TRUE, 'https://m.media-amazon.com/images/I/91B5Tln+04L._SY466_.jpg', 'Comprehensive guide to Python programming for beginners and professionals.'),
+(23, 'Eloquent JavaScript', 22, 7, 450.00, 30, TRUE, 'https://m.media-amazon.com/images/I/81-222zC0zL._SY466_.jpg', 'Modern introduction to JavaScript programming and web development.'),
+(24, 'Designing Data-Intensive Applications', 23, 9, 880.00, 16, TRUE, 'https://m.media-amazon.com/images/I/91rkMMsmkAL._SY466_.jpg', 'Architectural patterns for building scalable data systems.');
+
 
 -- 🛒 CARTS (depends on users)
 INSERT INTO cart (cart_id, created_at, updated_at, user_id) VALUES (1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1);

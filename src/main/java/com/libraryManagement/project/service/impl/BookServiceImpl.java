@@ -178,6 +178,7 @@ public class BookServiceImpl implements BookService {
         book.setStockQuantity(bookRequestDTO.getStockQuantity());
         book.setAuthor(author);
         book.setCategory(category);
+        book.setDescription(bookRequestDTO.getDescription());
         book.setImageUrl(bookRequestDTO.getImageUrl());
 
         Book updatedBook = bookRepository.save(book);
@@ -276,6 +277,7 @@ public class BookServiceImpl implements BookService {
         dto.setStockQuantity(book.getStockQuantity());
         dto.setAuthorName(book.getAuthor().getName());
         dto.setCategoryName(book.getCategory().getName());
+        dto.setDescription(book.getDescription());
         dto.setImageUrl(book.getImageUrl());
         return dto;
     }
@@ -287,6 +289,7 @@ public class BookServiceImpl implements BookService {
         book.setPrice(dto.getPrice());
         book.setStockQuantity(dto.getStockQuantity());
         book.setImageUrl(dto.getImageUrl());
+        book.setDescription(dto.getDescription());
         return book;
     }
 }
