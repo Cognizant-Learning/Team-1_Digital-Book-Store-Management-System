@@ -88,25 +88,19 @@ INSERT INTO books (book_id, title, author_id, category_id, price, stock_quantity
 (8, 'Code Complete', 14, 10, 720.50, 22, TRUE, 'https://m.media-amazon.com/images/I/61MYY5PRibL._UF1000,1000_QL80_.jpg', 'Software construction techniques for writing high-quality code.'),
 (9, 'The Art of Computer Programming', 7, 4, 1250.00, 8, TRUE, 'https://m.media-amazon.com/images/I/81Adpoh9IqL._UF1000,1000_QL80_.jpg', 'Foundational work on algorithms and mathematical techniques in programming.'),
 (10, 'Domain-Driven Design', 12, 8, 680.00, 14, TRUE, 'https://m.media-amazon.com/images/I/818NkFvZy4L._SY522_.jpg', 'Strategic approach to software design based on domain modeling.'),
-(11, 'Building Microservices', 13, 9, 599.99, 25, TRUE, 'https://m.media-amazon.com/images/I/914sPgoyb6L._SY466_.jpg', 'Guide to designing and deploying microservices architectures.'),
-(12, 'You Don''t Know JS: Scope & Closures', 11, 7, 350.00, 40, TRUE, 'https://m.media-amazon.com/images/I/71mKvSKoG9L._SY466_.jpg', 'Deep dive into JavaScript scope and closure mechanisms.'),
-(13, 'JavaScript: The Good Parts', 16, 7, 425.00, 35, TRUE, 'https://m.media-amazon.com/images/I/911-3fCci-L._SY466_.jpg', 'Highlights the elegant and effective features of JavaScript.'),
-(14, 'The C++ Programming Language', 10, 6, 850.00, 15, TRUE, 'https://m.media-amazon.com/images/I/61pW2Gbb1DL._SY466_.jpg', 'Authoritative reference on C++ language features and usage.'),
-(15, 'Head First Design Patterns', 17, 2, 530.00, 28, TRUE, 'https://m.media-amazon.com/images/I/61bDa6hYd-L._SY466_.jpg', 'Visual and engaging introduction to software design patterns.'),
-(16, 'Cracking the Coding Interview', 18, 4, 750.00, 50, TRUE, 'https://m.media-amazon.com/images/I/619M-4oN5FL._SY466_.jpg', 'Interview preparation book with coding problems and solutions.'),
-(17, 'Modern Operating Systems', 9, 5, 950.50, 11, TRUE, 'https://m.media-amazon.com/images/I/81h22026IqL._SY466_.jpg', 'Comprehensive overview of operating system concepts and design.'),
-(18, 'Extreme Programming Explained', 6, 3, 480.00, 17, TRUE, 'https://m.media-amazon.com/images/I/71O15-no1GL._SY466_.jpg', 'Agile software development methodology focused on simplicity and feedback.'),
-(19, 'Grokking Algorithms', 19, 4, 499.00, 33, TRUE, 'https://m.media-amazon.com/images/I/61uOAw4DJGL._SY466_.jpg', 'Illustrated guide to understanding algorithms through real-world examples.'),
-(20, 'Java Concurrency in Practice', 20, 1, 620.00, 19, TRUE, 'https://m.media-amazon.com/images/I/61o2a3aT4XL._SY466_.jpg', 'Techniques for writing thread-safe Java applications.'),
-(21, 'Clean Architecture', 3, 2, 475.00, 24, TRUE, 'https://m.media-amazon.com/images/I/71s-A1g+JHL._SY466_.jpg', 'Principles for designing scalable and maintainable software architectures.'),
-(22, 'Learning Python', 21, 11, 799.00, 20, TRUE, 'https://m.media-amazon.com/images/I/91B5Tln+04L._SY466_.jpg', 'Comprehensive guide to Python programming for beginners and professionals.'),
-(23, 'Eloquent JavaScript', 22, 7, 450.00, 30, TRUE, 'https://m.media-amazon.com/images/I/81-222zC0zL._SY466_.jpg', 'Modern introduction to JavaScript programming and web development.'),
-(24, 'Designing Data-Intensive Applications', 23, 9, 880.00, 16, TRUE, 'https://m.media-amazon.com/images/I/91rkMMsmkAL._SY466_.jpg', 'Architectural patterns for building scalable data systems.');
+(11, 'JavaScript: The Good Parts', 16, 7, 425.00, 35, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYsDrcM68yFgCdKqnDXJ0AakVh4vkHjy2iXQ&s', 'Highlights the elegant and effective features of JavaScript.'),
+(12, 'The C++ Programming Language', 10, 6, 850.00, 15, TRUE, 'https://m.media-amazon.com/images/I/711AW7I8e8L.jpg', 'Authoritative reference on C++ language features and usage.'),
+(13, 'Head First Design Patterns', 17, 2, 530.00, 28, TRUE, 'https://www.oreilly.com/library/cover/9781492077992/1200w630h/', 'Visual and engaging introduction to software design patterns.'),
+(14, 'Cracking the Coding Interview', 18, 4, 750.00, 50, TRUE, 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEDgU-zfVGXqE84R4-lGYj6DCwQG8RdT9av-d-aso3hKCBi0UtqldVyTtqVo1Mhdub-7Eq4G_8g7lm3JDVNBPfpF0a7hHPi5n27uac1g', 'Interview preparation book with coding problems and solutions.'),
+(15, 'Modern Operating Systems', 9, 5, 950.50, 11, TRUE, 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrAcLxCGTZxknT05-cNsSZ0DHjkY42jVKmI4PSJEHKLhQxlfd0G_XYd7jrH86Fa_bLMKlxr-1nJOOMNm8TR9KDVqDLhZjlLl5nKdUo9Q', 'Comprehensive overview of operating system concepts and design.'),
+(16, 'Extreme Programming Explained', 6, 3, 480.00, 17, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRFDQi-bPLer3RN5Yj7zh4e_knnsuygIrnBA&s', 'Agile software development methodology focused on simplicity and feedback.'),
+(17, 'Grokking Algorithms', 19, 4, 499.00, 33, TRUE, 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6tFasBoTpfleitYnQl8jkR0szl23-qHjlrPlhM34G_5sLv5w1sf_lpL5ui29WLBDC2Mj-Wt28oOP3cAJte1S73SuUoXtW4V6B9_cYbg', 'Illustrated guide to understanding algorithms through real-world examples.'),
+(18, 'Java Concurrency in Practice', 20, 1, 620.00, 19, TRUE, 'https://m.media-amazon.com/images/I/71ho2R8EEKL._AC_UF1000,1000_QL80_.jpg', 'Techniques for writing thread-safe Java applications.'),
+(19, 'Learning Python', 21, 11, 799.00, 20, TRUE, 'https://m.media-amazon.com/images/I/81uCXHuaHfL._AC_UF1000,1000_QL80_.jpg', 'Comprehensive guide to Python programming for beginners and professionals.'),
+(20, 'Eloquent JavaScript', 22, 7, 450.00, 30, TRUE, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaaBI39sms2Nh9sDoVEhDqnH4MfW8y6IM5ww&s', 'Modern introduction to JavaScript programming and web development.'),
+(21, 'Designing Data-Intensive Applications', 23, 9, 880.00, 16, TRUE, 'https://m.media-amazon.com/images/I/71YL95jVDpL.jpg', 'Architectural patterns for building scalable data systems.');
 
 
--- 🛒 CARTS (depends on users)
-INSERT INTO cart (cart_id, created_at, updated_at, user_id) VALUES (1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1);
-INSERT INTO cart (cart_id, created_at, updated_at, user_id) VALUES (2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 2);
 
 -- 3. Tables with multiple dependencies
 -- 🧾 INVENTORY (depends on books)
@@ -132,34 +126,4 @@ INSERT INTO inventory (id, book_id, stock_quantity) VALUES (18, 18, 17);
 INSERT INTO inventory (id, book_id, stock_quantity) VALUES (19, 19, 33);
 INSERT INTO inventory (id, book_id, stock_quantity) VALUES (20, 20, 19);
 INSERT INTO inventory (id, book_id, stock_quantity) VALUES (21, 21, 24);
-INSERT INTO inventory (id, book_id, stock_quantity) VALUES (22, 22, 20);
-INSERT INTO inventory (id, book_id, stock_quantity) VALUES (23, 23, 30);
-INSERT INTO inventory (id, book_id, stock_quantity) VALUES (24, 24, 16);
 
--- 🧺 CART ITEMS (depends on carts, books)
--- (These rows now reference valid book_ids 1, 2, 3)
-INSERT INTO cart_items (cart_item_id, quantity, book_id, cart_id) VALUES (1, 2, 1, 1);
-INSERT INTO cart_items (cart_item_id, quantity, book_id, cart_id) VALUES (2, 1, 3, 1);
-INSERT INTO cart_items (cart_item_id, quantity, book_id, cart_id) VALUES (3, 1, 2, 2);
-
--- 📝 REVIEWS (depends on users, books)
--- (These rows now reference valid book_ids 1, 2, 3)
-INSERT INTO reviews (review_id, user_id, book_id, rating, content) VALUES (1, 1, 1, 5.0, 'Excellent book for Spring Boot beginners!');
-INSERT INTO reviews (review_id, user_id, book_id, rating, content) VALUES (2, 2, 2, 4.0, 'Very informative and well-written.');
-INSERT INTO reviews (review_id, user_id, book_id, rating, content) VALUES (3, 1, 3, 5.0, 'A must-read for clean coding practices.');
-
--- 4. Order processing tables
--- 📦 ORDERS (depends on users, shipping_address)
-INSERT INTO orders (order_id, total_amount, status, payment_id, user_id,  shipping_address) VALUES (1, 1450.48, 'PLACED', 'PAY-ALICE-123', 1, 1);
-INSERT INTO orders (order_id, total_amount, status, payment_id, user_id,  shipping_address) VALUES (2, 599.00, 'SHIPPED', 'PAY-RAHUL-456', 2, 2);
-
--- 📦 ORDER ITEMS (depends on orders, books)
--- (These rows now reference valid book_ids 1, 2, 3)
-INSERT INTO order_items (item_id, quantity, unit_price, order_id, book_id) VALUES (1, 2, 499.99, 1, 1);
-INSERT INTO order_items (item_id, quantity, unit_price, order_id, book_id) VALUES (2, 1, 450.50, 1, 3);
-INSERT INTO order_items (item_id, quantity, unit_price, order_id, book_id) VALUES (3, 1, 599.00, 2, 2);
-
--- 💳 PAYMENTS (depends on orders)
--- Note: The 'order_order_id' column is the default name generated by JPA for the @ManyToOne relationship to the Order entity.
---INSERT INTO payments (payment_id, provider, provider_ref, amount, status, order_order_id) VALUES (1, 'Razorpay', 'RP123XYZ', 1450.48, 'PAID', 1);
---INSERT INTO payments (payment_id, provider, provider_ref, amount, status, order_order_id) VALUES (2, 'Paytm', 'PTM456ABC', 599.00, 'PAID', 2);
