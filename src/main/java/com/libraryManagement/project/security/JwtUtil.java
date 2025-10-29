@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import javax.crypto.SecretKey;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
+import io.github.cdimascio.dotenv.Dotenv;
+
 
 import java.util.Date;
 
@@ -18,11 +20,12 @@ public class JwtUtil {
 
     @PostConstruct
     public void init() {
-        final String SECRET = "yourSecureSecretKeyWith32+CharactersForHS256";
+        Dotenv dotenv = Dotenv.load();
+        final String SECRET = dotenv.get("JWT_SECRET_KEY");
         this.key = Keys.hmacShaKeyFor(SECRET.getBytes());
     }
     public String generateToken(String email, String role, Long userId) {
-        long EXPIRATION = 1000 * 60 * 15L;
+        long EXPIRATION = 1000 * 60 * 30L;
         return Jwts.builder()
                 .setSubject(email)
                 .claim("role", role) //role claim

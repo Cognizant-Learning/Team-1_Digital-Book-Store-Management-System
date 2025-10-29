@@ -72,8 +72,7 @@ public class OrderServiceImpl implements OrderService {
         //Creating Order object
         Order order = new Order();
         order.setUser(user);
-        order.setStatus(OrderStatus.PLACED);
-        order.setPaymentId(STR."id_pay\{UUID.randomUUID()}");
+        order.setStatus(OrderStatus.valueOf(orderRequestDTO.getStatus()));        order.setPaymentId(STR."id_pay\{UUID.randomUUID()}");
         order.setAddress(address);
 
 
